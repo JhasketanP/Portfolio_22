@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website </title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/81bc74761c.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav id="navbar">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Service</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <br>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Data Science and Analyst enthusiast.</p>
+                <h1>Hi, I'm <br>Jhasaketan Prusty </h1>
+            </div>
+        </div>
+    </div>
+    <!-- -------- about ---------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="profile4.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me:</h1>
+                    <br>
+                    <p>Hi, I'm Jhasaketan Prusty. I am a young enthusiast who always seeks to learn new things and lead from the front. Known for my calm mind and strong decision-making capabilities, I am passionate about data science and analysis, always striving to explore new horizons and make impactful contributions in these fields.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('expreience')">Experience</p>
+                        <p class="tab-links"onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Programming:</span><br>Python, C/C++, Java</li>
+                            <li><span>Hands-on:</span><br>Ploting and Analysing Graphs<br>Projects related to Images</li>
+                            <li><span>Operating Systems:</span><br>Windows, Linux</li>
+                            <li><span>Non-Technical:</span><br>Good at analyzing work<br>Fine Decision making and Confident</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="expreience">
+                        <ul>
+                            <li><span>Intrainz</span><br>Data Science intern<br>(Jan-2024 to Fab-2024) ----> <a href="inter1_inter2_merged.pdf" target="_blank">Certificate <i class="fa-solid fa-link"></i></a></li>
+                            <br>
+                            <li><span>Teachnook</span><br>Data Science and Analyst intern<br>(Apr-2024 to Mar-2024)  ----> <a href="inter3_inter4_merged.pdf" target="_blank">Certificate <i class="fa-solid fa-link"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>BTech</span><br>Graphic Era (Deemed To be University)</li>
+                            <br>
+                            <li><span>Senior Secondary</span><br>Delhi Public School, Haridwar</li>
+                            <br>
+                            <li><span>Secondary</span><br>Delhi Public School, Haridwar</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ---------service--------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Service</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Data Science</h2>
+                    <br>
+                    <p>I'm passionate about data science, eager to explore machine learning, deep learning, NLP, and big data technologies. Excited to work on projects involving clustering, neural networks, and distributed computing.</p>
+                    <a href="intern5.pdf" target="_blank">learn more</a>
+                </div>
+                <div>                    
+                    <i class="fa-solid fa-chart-simple"></i>
+                    <h2>Data Analysis</h2>
+                    <br>
+                    <p>I am keen to dig into data visualization, exploratory data analysis, and predictive modeling. With moderate Excel skills and ongoing Power BI studies, I'm excited to work on projects involving dashboard creation, trend analysis, and real-time data processing.</p>
+                    <a href="intern6.pdf" target="_blank">learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-image"></i>
+                    <h2>Image Processing</h2>
+                    <br>
+                    <p>I'm passionate about image processing, eager to explore convolutional neural networks (CNNs), image segmentation, and feature extraction. Having completed projects on image-to-image translation using GANs and denoising I'm excited to work on more advanced topics in this field.</p>
+                    <a href="#">learn more</a>
+                </div>                
+            </div>
+        </div>
+    </div>
+
+    <!-- ----------porfolio--------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="work1.jpg">
+                    <div class="layer">
+                        <h3>Image Translations</h3>
+                        <br>
+                        <p>I have completed projects on image-to-image translation using GANs, denoising, and emotion detection. My work involves using convolutional neural networks (CNNs) and generative adversarial networks (GANs) to enhance and transform images, exploring advanced techniques in feature extraction and image segmentation.</p>
+                        <br>
+                        <a href="GAN_proj.pdf" target="_blank"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="work2.jpg">
+                    <div class="layer">
+                        <h3>Analysing Data</h3>
+                        <br>
+                        <p>Currently I am showcasing my work on an online retail recommendation system using large excel datasets. Utilizing Python for data cleaning, pivot tables for summarizing data, and advanced formulas for predictive modeling, I aim to enhance customer experience through personalized recommendations.</p>
+                        <br>
+                        <a href="intrainz_major.pdf" target="_blank"><i class="fa-solid fa-link"></i></a> 
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="work3.jpg">
+                    <div class="layer">
+                        <h3>Predictions</h3>
+                        <br>
+                        <p>Now , I am showcasing my work on future prediction using algorithms like Random Forest. I utilize Excel for data cleaning and visualization. I also explore other algorithms such as Gradient Boosting and Support Vector Machines (SVM) to enhance predictive accuracy and insights.</p>
+                        <br>
+                        <a href="3rd-proj-major.pdf" target="_blank"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="https://github.com/JhasketanP" target="_blank" class="btn">See More</a>
+        </div>
+    </div>
+
+    <!-- -------------contact----------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i>  jhasaketanprusty28@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> +91-7037973310</p>
+                    <br>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/jasketan/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/jasketan_10?igsh=MzZzNGZyNXV6ZDJn" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://github.com/JhasketanP" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://leetcode.com/jhasaketanprusty28/" target="_blank"><i class="fa-regular fa-file-code"></i></a>
+                    </div>
+                    <br>
+                    <a href="Resume_22.pdf" download class="btn btn2">Download Resume</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Mesaage"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg">Wait for a while for the confirmation.</span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>All Rights Reserved. Personal Info</p>
+        </div>
+    </div>
+    
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname)
+        {
+            for(tablink of tablinks)
+            {
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents)
+            {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+        var sidemeu = document.getElementById("sidemenu");
+
+        function openmenu()
+        {
+            sidemeu.style.left = "0";
+        }
+        function closemenu()
+        {
+            sidemeu.style.left = "-200px";
+        }
+    </script>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzNXWERoqEjx7ZaoRT6rgxHB3iAsX4TKLoc0R3x1Ex8lMKF2SBUjOdNMziVV5oSK9cDmQ/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+  
+        form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent successfully!"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+</body>
+</html>
